@@ -1,29 +1,11 @@
+h2 {
+	color: blue;
+}
+
 /* id = "#" */
-#sec1 {
-	background-color: pink;
-	font-size: 90px;
-}
-
-#sec2 {
-	background-color: green;
-	color: white;
-}
-
-#sec3 {
-	background-color: orange;
-	color: black;
-}
-
-
-p {
-	background-color: aqua;
-	font-weight: bold;
-	text-align: right;
-	width: 50%;
-	margin-left: 60px;
-}
 /* class = "." */
-.gollum {
+
+.image {
 	display: block;
 	width: 600px;
 	height: 600px;
@@ -44,15 +26,3 @@ p {
 	text-align: center;
 }
 
-.d1 {
-	background-color: red;
-}
-
-.d2 {
-	background-color: yellow;
-}
-
-.d3 {
-	background-color: lightgoldenrodyellow;
-	color: blue;
-}

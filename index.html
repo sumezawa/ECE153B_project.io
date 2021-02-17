@@ -1,40 +1,63 @@
 <!doctype html>
 <html lang="en">
-	<title>A Test Site</title>
+	<title>ECE153B Final Project</title>
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="style.css">
 </head>
-	<body>
-		<div class="picture-div">
-			<img class="gollum" src="media/gollum.jpg", alt="Gollum">
-				<p id="Gollum-Label">
-					bruh moment
-				</p>
-				<a href="othersites/aboutme.html">About Me</a>
 
-				<div class="flex">
-					<div class="d1">d1</div>
-					<div class="d2">d2</div>
-					<div class="d3">d3</div>
-				</div>
-			<nav>
-				<ul>
-					<li><a href="#sec1">section 1</a></li>
-					<li><a href="#sec2">section 2</a></li>
-					<li><a href="#sec3">section 3</a></li>
-				</ul>
-			</nav>
+<body>
+	<div class="title">
+		<h1>Final Project, "Emoticon Defence"</h1>
+		<h3>ECE 153B - Sensor and Peripheral Interface Design</h3>
+		<h4>Winter 2021</h4>
+		<h5>Sammy Umezawa</h5>
+	</div>
 
-			<h2 id="sec1">Section 1</h2>
-				<p> this is the seciton1 (nice). </p>
+	<div class="section">
+		<h2>Overview</h2>
+		<p> A turn-based tower defence/attack game displayed on the terminal;
+		one player moves a vertically manoeuvrable cannon and defends the
+		left side of the screen, while another player sends various emoticons
+		from the right towards the left of the screen. The tower wins a different
+		number of points for each type of attacking emoticon, and for each turn
+		survived. When an emoticon reaches the left side, the tower's health
+		decreases. The game ends after the tower's health reaches 0. The LCD screen 
+		(separate from the discovery board) displays the defender's score, the
+		tower's health, or event-based messages (like 'game over').</p>
+	</div>
+	<div class="section">
+		<h2>Peripherals</h2>
+		<ul>
+			<li>HC-05 Wireless Bluetooth</li>
+			<li>LCD1602 Display (with I2C Adapter)</li>
+			<li>(Analog) Joystick from an Arduino Kit</li>
+		</ul> 
+	</div>
+	<div class="section">
+		<h2>Protocols</h2>
+		<ul>
+			<li>UART (Bluetooth)</li>
+			<li>I2C (LCD Display)</li>
+			<li>PWM (Joystick)</li>
+		</ul> 
+	</div>
 
-			<h2 id="sec2">w0w0w0w0w seciont 12??</h2>
-				<p> eprhaps this is section 2 (ok ok\) </p>
+	<div class="section">
+		<h2>Block Diagram</h2>
+		<img class="bdiag" src="media/bdiag.png", alt="block diagram">
+	</div>
+	
+	<div class="section">
+		<h2>Software Structure</h2>
+		<ul>
+			<li>text graphic display program</li>
+			<li>interrupt handlers for each player's turns</li>
+			<li>interrupt handlers for Joystick Inputs</li>
+			<li>interrupt handlers for LCD Modes(messages or tower stats)</li>
+		</ul> 
+	</div>
 
-			<h2 id="sec3">OK LETS GO</h2>
 
-				<p> this is sec4 duh on BRUH yuh yes 8888 ok ok! Man </p>
-		</div>
-	</body>
+</body>
 </html>
