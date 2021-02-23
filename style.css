@@ -14,8 +14,12 @@ ul {
 }
 
 p {
-  border: 2px solid;
-  border-radius: 10px;
+	padding-top: 50px;
+  	padding-right: 20px;
+  	padding-bottom: 50px;
+  	padding-left: 20px;
+  	border: 2px solid;
+  	border-radius: 10px;
 }
 
 img {
