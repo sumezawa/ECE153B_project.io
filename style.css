@@ -4,11 +4,15 @@ h2 {
 
 /* id = "#" */
 /* class = "." */
+ul {
+	list-style-type: circle;
+	background: #94b8b8;
+}
 
 img {
 	display: block;
-	width: 600px;
-	height: 600px;
+	width: 450px;
+	height: 450px;
 	text-align: center;
 	margin: auto; /* centre is so great, holy grail of centre */
 }
