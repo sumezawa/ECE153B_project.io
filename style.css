@@ -4,9 +4,17 @@ h2 {
 
 /* id = "#" */
 /* class = "." */
+body {
+	background-color: #94b8b8;
+}
+
 ul {
 	list-style-type: circle;
-	background: #94b8b8;
+}
+
+p {
+  border: 2px solid;
+  border-radius: 10px;
 }
 
 img {
